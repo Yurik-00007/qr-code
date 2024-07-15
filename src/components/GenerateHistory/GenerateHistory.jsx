@@ -5,7 +5,7 @@ import s from './GenerateHistory.module.css'
 
 export const GenerateHistory = () => {
   const arrGene = JSON.parse(localStorage.getItem(GANERATE_DATA))||[]
-  console.log(arrGene)
+  // console.log(arrGene)
   return (
     <div className={s.container}>
       {arrGene.map((item, i) =>

@@ -1,16 +1,17 @@
 .navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap:wrap;
-  gap: 20px;
-  font-size: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 25px;
+    padding: 10px;
 }
 
- a{
-  text-decoration: none;
-
+a {
+    text-decoration: none;
 }
-.active{
-  text-decoration: underline;
-  font-weight: 900;
+
+.active {
+    text-decoration: underline;
+    font-weight: 900;
 }
