@@ -44,20 +44,25 @@ ReactDOM.createRoot(document.getElementById('root')).render( <div> test </div>,)
 
 <h1 > Чтобы запустить на github pages</h1>
 
-1. Идем в vite.config.js
-2. Там дописываем послеplugins: [react()], дописываем base:'/qr-code' -> 'qr-code'-это имя проекта на github(❗не забудь 
+1. Нужно запустить сближенный код-> npm run build -> появиться новая папка dist
+2. Затем нужно запустить этот проект ->npm run preview-> и теперь будет запущен проект по адресу  http://localhost:4173/
+3. Останавливаем процес ctrl+c
+4. Идем в vite.config.js
+5. Там дописываем послеplugins: [react()], дописываем base:'/qr-code' -> 'qr-code'-это имя проекта на github(❗не забудь 
 поставить /)
-3. теперь нужно показать github как запустить мой проект у него на платформе(инструкции тут)->
+6. теперь нужно показать github как запустить мой проект у него на платформе(инструкции тут)->
 https://vitejs.dev/guide/static-deploy#github-pages
-4. зайдем в проект на github нажмем settings->pages->Source->GitHub Actions->Static HTML->Configure
-5. тут github раскалывает как должна выглядит структура папок qr-code/.github/workflows/static.yml
-6. Нужна создать такую структуру для этого создадим в корне папку с именем .github внутри нее должна быть папка workflows
+7. зайдем в проект на github нажмем settings->pages->Source->GitHub Actions->Static HTML->Configure
+8. тут github раскалывает как должна выглядит структура папок qr-code/.github/workflows/static.yml
+9. Нужна создать такую структуру для этого создадим в корне папку с именем .github внутри нее должна быть папка workflows
 в которой должен быть static.yml далее нажимаем кнопку Cancel changes и вставляем в файл код со второго пункта
    https://vitejs.dev/guide/static-deploy#github-pages
-7. Теперь заливаем эти изменения на github
+10. Теперь заливаем эти изменения на github
 ->git add.
+->git status
 ->git commit -m 'deploy'
 ->git push
+11. На главной репазитории появиться галочка значит все готово и можно запустить проект
    
 
 
